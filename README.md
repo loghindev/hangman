@@ -2,7 +2,7 @@
 
 <table>
     <tr>
-        <td>![hangman_image](http://datagenetics.com/blog/april12012/index.html)</td>
+        <td>![hangman_image](http://datagenetics.com/blog/april12012/hangmand.jpg)</td>
         <td>## Rules:
 
 - Set a `secret` word for your friends
