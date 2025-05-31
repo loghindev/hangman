@@ -5,10 +5,13 @@
 ## Rules:
 
 - Set a `secret` word for your friends
-- Let them play!
+- A word will be generated representing the first value added in `input` field.
+- After that, the behavior of "input" will change. U will be able to add only 1 character inside "input" which represents the letter you are trying to guess for the generated word.
 - I chose the classic rule where you have `6` attempts.
+- [🍀] Correct guesses will replace the blank positions in the word with the correct choice.
+- [❌] Wrong guesses will substract 1 heart (-1 x ♥️)
 
 > [!WARNING]
-> The program does NOT remember previous used letters, so if you use multiple times a wrong letter, you will keep loosing hearts, so be careful 😉
+> The program does NOT remember previously used letters, so if you use the wrong letter multiple times, you will continue to lose hearts, so be careful 😉
 
 **Play with friends**: [Hangman](https://loghindev.github.io/hangman/)
