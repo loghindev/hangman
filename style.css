@@ -5,6 +5,11 @@
 * {
   font-family: Poppins, sans-serif;
 }
+html,
+body {
+  -webkit-text-size-adjust: 100%; /* Previne text resizing automat */
+  touch-action: manipulation; /* Reduce interacțiuni ciudate pe mobil */
+}
 body {
   text-align: center;
 }
@@ -64,12 +69,5 @@ mark {
 @keyframes kill {
   to {
     font-size: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #input,
-  #btn {
-    font-size: 0.9em;
   }
 }
