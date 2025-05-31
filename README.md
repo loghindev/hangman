@@ -2,8 +2,10 @@
 
 <table>
     <tr>
-        <td>![hangman_image](http://datagenetics.com/blog/april12012/hangmand.jpg)</td>
-        <td>## Rules:
+        <td>
+          <img src="http://datagenetics.com/blog/april12012/hangmand.jpg" width="40%" alt="hangman_picture" />
+        </td>
+        <td>Rules:
 
 - Set a `secret` word for your friends
 - Let them play!
@@ -13,3 +15,5 @@
 
 > [!WARNING]
 > The program does NOT remember previous used letters, so if you use multiple times a wrong letter, you will keep loosing hearts, so be careful 😉
+
+Play with friends: [Hangman](https://loghindev.github.io/hangman/)
