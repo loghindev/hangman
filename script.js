@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
 function gameSource() {
   if (gameOver) return;
   input = document.getElementById("input"); // get the latest input state
+
+  // convert to lowerCase
+  let lowerCase = getLowerCase();
+  input.value = lowerCase;
+
   // check if input is empty
   // while warning message is displayed, button have no effect
   if (input.value === "" && !clicked) {
@@ -140,4 +145,18 @@ function removeWarningDelay(message) {
     clicked = false;
     message.textContent = "";
   }, 2500);
+}
+
+function getLowerCase() {
+  let chars = [];
+  for (let i = 0; i < input.value.length; ++i) {
+    chars.push(input.value[i]);
+  }
+  chars.forEach((char, index, array) => {
+    console.log(`${char} ${char.charCodeAt(0)}`);
+    if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+      array[index] = char.toLowerCase();
+    }
+  });
+  return chars.join("");
 }

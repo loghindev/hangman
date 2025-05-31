@@ -38,6 +38,7 @@ h1 {
 #heartsList {
   list-style-type: none;
   text-align: center;
+  padding: 0;
 }
 #charsList > .letter,
 #heartsList > .heart {
@@ -63,5 +64,12 @@ mark {
 @keyframes kill {
   to {
     font-size: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #input,
+  #btn {
+    font-size: 0.9em;
   }
 }
