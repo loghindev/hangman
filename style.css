@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+* {
+  font-family: Poppins, sans-serif;
+}
+body {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 2em;
+}
+#input {
+  font-size: 1em;
+  border: 1px solid;
+  outline: none;
+  padding: 3px 5px;
+  transition: background-color 0.1s ease;
+}
+#input:focus {
+  background-color: hsl(0, 0%, 94%);
+}
+#btn {
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid;
+  padding: 3px 1em;
+  transition: background-color 0.1s ease;
+}
+#btn:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+#btn:active {
+  background-color: hsl(0, 0%, 80%);
+}
+#charsList,
+#heartsList {
+  list-style-type: none;
+  text-align: center;
+}
+#charsList > .letter,
+#heartsList > .heart {
+  display: inline;
+  font-size: 1.4em;
+  margin: 0 3px;
+}
+#result,
+#warning {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+mark {
+  background-color: hsl(0, 0%, 85%);
+  padding: 2px 8px;
+}
+.kill-anim {
+  animation-name: kill;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes kill {
+  to {
+    font-size: 0;
+  }
+}
